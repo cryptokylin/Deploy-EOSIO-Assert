@@ -1,0 +1,27 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT ",
+    "version": "eosio::abi/1.1",
+    "types": [],
+    "structs": [
+        {
+            "name": "like",
+            "base": "",
+            "fields": [
+                {
+                    "name": "user",
+                    "type": "name"
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "name": "like",
+            "type": "like",
+            "ricardian_contract": "---\nspec-version: 0.0\ntitle: Like a Property\nsummary: Like a Tropical Example property\nicon: https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Love_Heart_SVG.svg/265px-Love_Heart_SVG.svg.png#301991F0C25EE8EAA55F4CE940B9E5910560652A8D930C56D65C3C8987FF7DDB\n---\nLiking this property will be visible to anyone who views your profile or searches your name.\nThis like may result in the post owner’s property to be featured on the property owner’s most liked pages.\nAny usage of bots, macros, or any autonomous form of liking a specific person’s property would result in the investigation of like legitimacy for a post."
+        }
+    ],
+    "tables": [],
+    "ricardian_clauses": [],
+    "variants": []
+}

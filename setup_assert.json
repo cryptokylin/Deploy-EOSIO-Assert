@@ -1,0 +1,23 @@
+{
+  "expiration": "2019-06-15T09:35:16",
+  "ref_block_num": 0,
+  "ref_block_prefix": 0,
+  "max_net_usage_words": 0,
+  "max_cpu_usage_ms": 0,
+  "delay_sec": 0,
+  "context_free_actions": [],
+  "actions": [{
+      "account": "eosio.assert",
+      "name": "setchain",
+      "authorization": [{
+          "actor": "eosio",
+          "permission": "active"
+        }
+      ],
+      "data": "5fff1dae8dc8e2fc4d5b23b2c7665c97f9e9d8edf2b6485a86ba311c256391911343727970746f4b796c696e20546573746e6574ce56c4ad6a92871ca24a493f39be4a3dae209d49b5ed8e950ec50f5efc005ab1"
+    }
+  ],
+  "transaction_extensions": [],
+  "signatures": [],
+  "context_free_data": []
+}

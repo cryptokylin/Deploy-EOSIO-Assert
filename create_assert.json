@@ -1,0 +1,41 @@
+{
+  "expiration": "2019-06-15T08:09:38",
+  "ref_block_num": 0,
+  "ref_block_prefix": 0,
+  "max_net_usage_words": 0,
+  "max_cpu_usage_ms": 0,
+  "delay_sec": 0,
+  "context_free_actions": [],
+  "actions": [{
+      "account": "eosio",
+      "name": "newaccount",
+      "authorization": [{
+          "actor": "eosio",
+          "permission": "active"
+        }
+      ],
+      "data": "0000000000ea305590afc2d800ea30550100000000010000000000ea30550000000080ab26a70100000100000000010000000000ea305500000000a8ed3232010000"
+    },{
+      "account": "eosio",
+      "name": "delegatebw",
+      "authorization": [{
+          "actor": "eosio",
+          "permission": "active"
+        }
+      ],
+      "data": "0000000000ea305590afc2d800ea3055a08601000000000004454f5300000000a08601000000000004454f530000000000"
+    },{
+      "account": "eosio",
+      "name": "buyram",
+      "authorization": [{
+          "actor": "eosio",
+          "permission": "active"
+        }
+      ],
+      "data": "0000000000ea305590afc2d800ea3055a08601000000000004454f5300000000"
+    }
+  ],
+  "transaction_extensions": [],
+  "signatures": [],
+  "context_free_data": []
+}
