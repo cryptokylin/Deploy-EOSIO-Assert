@@ -38,7 +38,7 @@ the chain id of Crypto Kylin Testnet is `5fff1dae8dc8e2fc4d5b23b2c7665c97f9e9d8e
 
 1. create eosio.assert account :
 ```
-cleos -u https://api-kylin.eoslaomao.com push action eosio newaccount '{"creator":"eosio","name":"eosio.assert","owner":{"threshold":1,"keys":[],"accounts":[{"permission":{"actor":"eosio","permission":"owner"},"weight":1}],"waits":[]},"active":{"threshold":1,"keys":[],"accounts":[{"permission":{"actor":"eosio","permission":"active"},"weight":1}],"waits":[]}}' -p eosio -s -j -d > create_assert.json
+cleos -u https://api-kylin.eoslaomao.com push action eosio newaccount '{"creator":"eosio","name":"eosio.assert","owner":{"threshold":1,"keys":[],"accounts":[{"permission":{"actor":"eosio","permission":"active"},"weight":1}],"waits":[]},"active":{"threshold":1,"keys":[],"accounts":[{"permission":{"actor":"eosio","permission":"active"},"weight":1}],"waits":[]}}' -p eosio -s -j -d > create_assert.json
 ```
 
 2. delegate bandwidth to eosio.assert:
