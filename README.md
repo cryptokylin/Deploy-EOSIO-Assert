@@ -32,7 +32,7 @@ SHA256(public/CryptoKylin-logo.png)= ce56c4ad6a92871ca24a493f39be4a3dae209d49b5e
 the chain id of Crypto Kylin Testnet is `5fff1dae8dc8e2fc4d5b23b2c7665c97f9e9d8edf2b6485a86ba311c25639191`, you can find it via api nodes, such as https://api-kylin.eoslaomao.com/v1/chain/get_info
 
 
-## STEP 1: Create account eosio.assert
+## STEP 1/3: Create account eosio.assert
 
 ### Prepare create account multisig transaction and propose
 
@@ -109,11 +109,11 @@ cleos -u https://api-kylin.eoslaomao.com multisig review eoslaomaocom createasse
 The actual transaction used in this proposal is in file `create_assert.json`.
 
 
-## Deploy eosio.assert contract
+## STEP 2/3: Deploy eosio.assert contract
 
 TODO
 
 
-## Setup chain info
+## STEP 3/3: Setup chain info
 
 TODO
