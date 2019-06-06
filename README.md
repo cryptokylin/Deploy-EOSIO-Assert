@@ -127,4 +127,27 @@ cleos -u https://api-kylin.eoslaomao.com multisig review eoslaomaocom deployasse
 
 ## STEP 3/3: Setup chain info
 
-TODO
+Now we need to call setup action in eosio.assert contracts to register Kylin Testnet onchain.
+
+Here is the payload:
+
+```
+{
+      "chain_id": "5fff1dae8dc8e2fc4d5b23b2c7665c97f9e9d8edf2b6485a86ba311c25639191",
+      "chain_name": "CryptoKylin Testnet",
+      "icon": "ce56c4ad6a92871ca24a493f39be4a3dae209d49b5ed8e950ec50f5efc005ab1"
+}
+```
+
+```
+cleos push action eosio.assert setup {"chain_id": "5fff1dae8dc8e2fc4d5b23b2c7665c97f9e9d8edf2b6485a86ba311c25639191","chain_name": "CryptoKylin Testnet","icon": "ce56c4ad6a92871ca24a493f39be4a3dae209d49b5ed8e950ec50f5efc005ab1"} -p eosio -s -j -d > setup_assert.json
+```
+
+
+Update `setup_assert.json`, set expiration to a future time, set `ref_block_num` and `ref_block_prefix` to 0, and propose it. 
+
+We have proposed this transaction on Kylin Testnet : [https://kylin.eosx.io/tools/msig/proposal?proposer=eoslaomaocom&name=setupassert](https://kylin.eosx.io/tools/msig/proposal?proposer=eoslaomaocom&name=setupassert), please review and verify ASAP. 
+
+```
+cleos -u https://api-kylin.eoslaomao.com multisig review eoslaomaocom setupassert
+```
