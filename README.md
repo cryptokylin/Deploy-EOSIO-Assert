@@ -111,7 +111,18 @@ The actual transaction used in this proposal is in file `create_assert.json`.
 
 ## STEP 2/3: Deploy eosio.assert contract
 
-TODO
+```
+cleos -u https://api-kylin.eoslaomao.com set contract eosio.assert > deploy_assert.json
+```
+
+Update expiration to a future time, set `ref_block_num` and `ref_block_prefix` to 0, and propose it. 
+
+We have proposed this transaction on Kylin Testnet : [https://kylin.eosx.io/tools/msig/proposal?proposer=eoslaomaocom&name=deployassert](https://kylin.eosx.io/tools/msig/proposal?proposer=eoslaomaocom&name=deployassert), please review and verify ASAP. 
+
+```
+cleos -u https://api-kylin.eoslaomao.com multisig review eoslaomaocom deployassert
+```
+
 
 
 ## STEP 3/3: Setup chain info
