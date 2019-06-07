@@ -26,7 +26,7 @@ You can find the logo of Crypto Kylin Testnet under `public` folder, the checksu
 
 ```
 openssl dgst -sha256 public/CryptoKylin-logo.png
-SHA256(public/CryptoKylin-logo.png)= ce56c4ad6a92871ca24a493f39be4a3dae209d49b5ed8e950ec50f5efc005ab1
+SHA256(public/CryptoKylin-logo.png)= 7d0b4735cf3788d38b972b383a80acb56f97955a50dee022e9b976eca282f754
 ```
 
 the chain id of Crypto Kylin Testnet is `5fff1dae8dc8e2fc4d5b23b2c7665c97f9e9d8edf2b6485a86ba311c25639191`, you can find it via api nodes, such as https://api-kylin.eoslaomao.com/v1/chain/get_info
@@ -135,12 +135,12 @@ Here is the payload:
 {
       "chain_id": "5fff1dae8dc8e2fc4d5b23b2c7665c97f9e9d8edf2b6485a86ba311c25639191",
       "chain_name": "CryptoKylin Testnet",
-      "icon": "ce56c4ad6a92871ca24a493f39be4a3dae209d49b5ed8e950ec50f5efc005ab1"
+      "icon": "7d0b4735cf3788d38b972b383a80acb56f97955a50dee022e9b976eca282f754"
 }
 ```
 
 ```
-cleos push action eosio.assert setup {"chain_id": "5fff1dae8dc8e2fc4d5b23b2c7665c97f9e9d8edf2b6485a86ba311c25639191","chain_name": "CryptoKylin Testnet","icon": "ce56c4ad6a92871ca24a493f39be4a3dae209d49b5ed8e950ec50f5efc005ab1"} -p eosio -s -j -d > setup_assert.json
+cleos push action eosio.assert setup {"chain_id": "5fff1dae8dc8e2fc4d5b23b2c7665c97f9e9d8edf2b6485a86ba311c25639191","chain_name": "CryptoKylin Testnet","icon": "7d0b4735cf3788d38b972b383a80acb56f97955a50dee022e9b976eca282f754"} -p eosio -s -j -d > setup_assert.json
 ```
 
 
