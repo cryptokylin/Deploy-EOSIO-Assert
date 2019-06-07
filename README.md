@@ -127,7 +127,7 @@ cleos -u https://api-kylin.eoslaomao.com multisig review eoslaomaocom deployasse
 
 ## STEP 3/3: Setup chain info
 
-Now we need to call setup action in eosio.assert contracts to register Kylin Testnet onchain.
+Now we need to call setchain action in eosio.assert contracts to register Kylin Testnet onchain.
 
 Here is the payload:
 
@@ -140,7 +140,7 @@ Here is the payload:
 ```
 
 ```
-cleos push action eosio.assert setup {"chain_id": "5fff1dae8dc8e2fc4d5b23b2c7665c97f9e9d8edf2b6485a86ba311c25639191","chain_name": "CryptoKylin Testnet","icon": "7d0b4735cf3788d38b972b383a80acb56f97955a50dee022e9b976eca282f754"} -p eosio -s -j -d > setup_assert.json
+cleos push action eosio.assert setchain {"chain_id": "5fff1dae8dc8e2fc4d5b23b2c7665c97f9e9d8edf2b6485a86ba311c25639191","chain_name": "CryptoKylin Testnet","icon": "7d0b4735cf3788d38b972b383a80acb56f97955a50dee022e9b976eca282f754"} -p eosio -s -j -d > setup_assert.json
 ```
 
 
